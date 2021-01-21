@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+hr {
+  width: 100%;
+}
+
+.youtube-logo {
+  margin-left: 20px;
+}
+
+#center {
+  display: flex;
+  flex-grow: 1;
+  width: 578px;
+  height: 28px;
+}
+input[type="search"] {
+  width: 558px;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  margin: 0 32px 0 160px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+}
+
+.search-btn {
+  width: 60px;
+  padding-top: 2px;
+  border: 1px solid #ddd;
+}
+
+.mic {
+  padding-top: 2px;
+  border: none;
+  margin-left: 15px;
+}
+
+#right {
+  display: flex;
+  align-items: center;
+}
+
+.apps {
+  margin-right: 30px;
+}
+
+.settings {
+  margin-right: 15px;
+}
+
+.person {
+  background-color: blue;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 3px;
+}
+
+#main {
+  margin-top: 10px;
+  display: flex;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 11px;
+  cursor: pointer;
+}
+
+#video-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 10px;
+}
+
+ #video-logo, #channel-title, .video, .advert, .card-title {
+  cursor: pointer;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px white;
+  border-top: solid 3px gray;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: loading 1s infinite linear;
+  margin-left: 40%;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.advert {
+  width: 405px;
+  height: 140px;
+  object-fit: cover;
+  background-color: #AAA;
+  margin-left: 30px;
+}
+
+.video {
+  width: 165px;
+  height: 80px;
+  object-fit: cover;
+  background-color: #AAA;
+  margin-left: 30px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  width: 405px;
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+}
+
+.video-info img {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.reply {
+  transform: rotate(180deg);
+}
+
+#video-views {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 200;
+  font-size: 16px;
+  color: gray;
+  margin: 10px;
+}
+
+.views-title {
+  font-weight: 200;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#description {
+    margin: 10px;
+}
+
+#description-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#description-grouping {
+  display: flex;
+}
+
+#subscribe-button {
+  color: white;
+  background-color: red;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#show-more {
+  cursor: pointer;
+}
+
+#sub-count {
+  color: gray;
+}
+
+#aside-hr {
+  width: 405px;
+  margin-left: 30px;
+}
+
+#video-logo {
+  background-color: #AAA;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-channel, .card-views {
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+     input {
+        display: none;
+    }
+
+    .search-btn {
+      background-color: white;
+      width: 50px;
+      border: none;
+      margin-left: 100px;
+      cursor: pointer;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      width: 500px;
+      height: 55px;
+      padding: 0;
+    }
+
+    .youtube-logo {
+      margin-left: 10px;
+    }
+
+    iframe {
+      width: 450px;
+      height: 280px;
+      margin-left: 20px;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    #center {
+      width: 50px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: flex-end;
+      margin: 0;
+    }
+
+    .search-input {
+      display: none;
+    }
+
+    .mic {
+      display: none;
+    }
+
+    #right {
+      display: flex;
+      align-items: center;
+    }
+
+    .apps {
+      margin-right: 30px;
+    }
+
+    .settings {
+      margin-right: 15px;
+    }
+
+    .person {
+      background-color: blue;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 3px;
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sign-in {
+      display: flex;
+      align-items: center;
+      border: 1px solid blue;
+      padding: 11px;
+      cursor: pointer;
+    }
+
+    #video-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 10px;
+    }
+
+     #video-logo, #channel-title {
+      cursor: pointer;
+    }
+
+    .circle {
+      display: none;
+    }
+
+    .circle2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 3px white;
+      border-top: solid 3px gray;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      animation: loading 1s infinite linear;
+      margin-left: 40%;
+    }
+
+    @keyframes loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .advert {
+      width: 405px;
+      height: 140px;
+      object-fit: cover;
+      background-color: #AAA;
+      margin-left: 30px;
+    }
+
+    .video {
+      width: 165px;
+      height: 80px;
+      object-fit: cover;
+      background-color: #AAA;
+      margin-left: 30px;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      display: flex;
+      width: 405px;
+      height: 110px;
+      margin-bottom: 20px;
+    }
+
+    .video-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .video-info img {
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #video-views {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 200;
+      font-size: 16px;
+      color: gray;
+      margin: 10px;
+    }
+
+    .views-title {
+      font-weight: 200;
+      font-size: 12px;
+    }
+
+    .video-details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+
+    #description {
+        margin: 10px;
+    }
+}
